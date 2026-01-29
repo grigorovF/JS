@@ -1,0 +1,85 @@
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #f4f6f9;
+}
+main {
+    width: 600px;
+    height: 150px;
+    background-color: #ffffff;
+    border-radius: 12px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 25px;
+}
+
+.div-main {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+.circle {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-color: #e0e0e0; /* Светло сива боја за неактивен круг */
+    border: 3px solid #ccc; /* Светло сив раб */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: background-color 0.3s ease, border-color 0.3s ease;
+}
+
+.line {
+    height: 5px;
+    width: 100px;
+    background-color: #ccc; 
+    border-radius: 10px;
+    transition: background-color 0.3s ease;
+}
+
+.circle-active {
+    background-color: #3498d0; 
+    border-color: #2980b9; 
+}
+.line-active {
+    background-color: #3498db; 
+    width: 100%;
+}
+
+/* Стил за копчињата */
+.buttons {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+button {
+    width: 80px;
+    height: 40px;
+    background-color: #3498db;
+    border: none;
+    border-radius: 30px;
+    color: #fff;
+    font-size: 18px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #2980b9;
+}
+
+button:active {
+    background-color: #2980b9;
+}
